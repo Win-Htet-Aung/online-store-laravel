@@ -31,7 +31,7 @@
         <!-- sidebar -->
         <div class="col content-grey">
             <nav class="p-3 shadow text-end">
-                <span class="profile-font">Admin</span>
+                <span class="profile-font">Admin - {{ Auth::user()->getName() }}</span>
                 <img class="img-profile rounded-circle" src="{{ asset('/img/undraw_profile.svg') }}">
             </nav>
             <div class="g-0 m-5">
