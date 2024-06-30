@@ -25,7 +25,7 @@
                     <a class="nav-link active" href="{{ route('home.about') }}">About</a>
                     <a class="nav-link active" href="{{ route('product.index') }}">Products</a>
                     <a class="nav-link active" href="{{ route('cart.index') }}">Cart</a>
-                    @if (Auth::user() && Auth::user()->getRole() == "admin")
+                    @if (Auth::user() && Auth::user()->getRole() == 'admin')
                         <a class="nav-link active" href="{{ route('admin.home.index') }}">Admin Panel</a>
                     @endif
                     <div class="vr bg-white mx-2 d-none d-lg-block"></div>
@@ -33,6 +33,7 @@
                         <a class="nav-link active" href="{{ route('login') }}">Login</a>
                         <a class="nav-link active" href="{{ route('register') }}">Register</a>
                     @else
+                        <a class="nav-link active" href="{{ route('myaccount.orders') }}">My Orders</a>
                         <form id="logout" action="{{ route('logout') }}" method="POST">
                             <a role="button" class="nav-link active"
                                 onclick="document.getElementById('logout').submit();">Logout</a>
