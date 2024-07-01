@@ -20,6 +20,14 @@ The following tools need to be installed first to run this project.
 - composer (2.7.*)
 - mysql
 
+## Setup database
+
+Setup database to use with the application.
+
+- run mysql server and create a database
+- copy ```.env.example``` and paste it in the same directory with the name ```.env```
+- update ```DB_*``` variables with actual values
+
 ## Running the project
 
 Follow these steps to run the project.
